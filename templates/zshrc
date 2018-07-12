@@ -1,0 +1,26 @@
+
+if [ ! -d $HOME/.oh-my-zsh ]; then
+	echo "Initial zsh setup..."
+	git clone --recursive https://github.com/stdiopt/oh-my-zsh.git ~/.oh-my-zsh
+fi
+
+export ZSH="$HOME/.oh-my-zsh"
+	
+export LANG=en_US.UTF-8
+export GOPATH=~/go
+export PATH=$PATH:~/.yarn/bin:~/.gem/ruby/2.5.0/bin:$HOME/bin:$GOPATH/bin:$HOME/.cargo/bin
+
+ZSH_THEME="stdio"
+
+plugins=(
+	go
+  git
+	zsh-autosuggestions 
+	zsh-history-substring-search 
+	zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+
+
+
