@@ -1,5 +1,10 @@
 # custom files
+<<<<<<< HEAD
 custom/
+=======
+!custom/plugins/example
+!custom/example.zsh
+>>>>>>> d764eff2 (Added custom and plugins)
 
 # temp files directories
 cache/
